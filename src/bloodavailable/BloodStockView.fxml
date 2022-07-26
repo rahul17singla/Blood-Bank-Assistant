@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodavailable.BloodStockViewController">
+   <children>
+      <AnchorPane minHeight="650.0" minWidth="650.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e87676; -fx-border-width: 3; -fx-border-color: black;">
+         <children>
+            <Label layoutX="188.0" layoutY="14.0" text="Blood Bank" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="52.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="93.0" layoutY="92.0" text="Available Blood Units" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="52.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="81.0" layoutY="225.0" text="AB+" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="405.0" text="B+" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="315.0" text="A+" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="225.0" text="AB-" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="495.0" text="O-" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="405.0" text="B-" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="387.0" layoutY="315.0" text="A-" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="495.0" text="O+" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="abpos" alignment="CENTER" editable="false" focusTraversable="false" layoutX="151.0" layoutY="223.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="236.0" layoutY="228.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="abneg" alignment="CENTER" editable="false" focusTraversable="false" layoutX="450.0" layoutY="223.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="533.0" layoutY="228.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="apos" alignment="CENTER" editable="false" focusTraversable="false" layoutX="151.0" layoutY="313.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="236.0" layoutY="318.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bpos" alignment="CENTER" editable="false" focusTraversable="false" layoutX="151.0" layoutY="403.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="236.0" layoutY="408.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="opos" alignment="CENTER" editable="false" focusTraversable="false" layoutX="151.0" layoutY="493.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="236.0" layoutY="498.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="aneg" alignment="CENTER" editable="false" focusTraversable="false" layoutX="450.0" layoutY="315.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="535.0" layoutY="320.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bneg" alignment="CENTER" editable="false" focusTraversable="false" layoutX="450.0" layoutY="403.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="535.0" layoutY="408.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="oneg" alignment="CENTER" editable="false" focusTraversable="false" layoutX="450.0" layoutY="493.0" prefHeight="32.0" prefWidth="78.0">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="535.0" layoutY="498.0" text="units">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="80.0" layoutY="370.0" prefWidth="200.0" />
+            <Separator layoutX="80.0" layoutY="459.0" prefWidth="200.0" />
+            <Separator layoutX="80.0" layoutY="546.0" prefWidth="200.0" />
+            <Separator layoutX="325.0" layoutY="204.0" orientation="VERTICAL" prefHeight="364.0" prefWidth="1.0" />
+            <Separator layoutX="41.0" layoutY="204.0" orientation="VERTICAL" prefHeight="364.0" prefWidth="1.0" />
+            <Separator layoutX="609.0" layoutY="204.0" orientation="VERTICAL" prefHeight="364.0" prefWidth="1.0" />
+            <Button layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#doBack" prefHeight="11.0" prefWidth="45.0" style="-fx-background-color: e87676;" text="Back" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="83.0" layoutY="285.0" prefWidth="200.0" />
+      <Separator layoutX="381.0" layoutY="370.0" prefWidth="200.0" />
+      <Separator layoutX="381.0" layoutY="459.0" prefWidth="200.0" />
+      <Separator layoutX="381.0" layoutY="546.0" prefWidth="200.0" />
+      <Separator layoutX="384.0" layoutY="285.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recieverhistory.RecieverHistController">
+   <children>
+      <AnchorPane minHeight="650.0" minWidth="650.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e87676; -fx-border-width: 3; -fx-border-color: black;">
+         <children>
+            <TableView fx:id="tableView" layoutX="33.0" layoutY="159.0" prefHeight="429.0" prefWidth="580.0" style="-fx-background-color: e87676;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TableView>
+            <Button alignment="CENTER" layoutX="398.0" layoutY="93.0" mnemonicParsing="false" onAction="#doShowAll" prefHeight="26.0" prefWidth="214.0" style="-fx-background-color: gold;" text="Show All Records">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="bloodgrp" layoutX="48.0" layoutY="96.0" prefHeight="39.0" prefWidth="131.0" promptText="Blood Group" style="-fx-background-color: gold;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Button layoutX="196.0" layoutY="96.0" mnemonicParsing="false" onAction="#doFilterRecords" prefHeight="39.0" prefWidth="138.0" style="-fx-background-color: e87676;" text="Filtered Records" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Separator layoutX="359.0" layoutY="85.0" orientation="VERTICAL" prefHeight="65.0" prefWidth="7.0" />
+            <Label fx:id="lblLogo" alignment="CENTER" layoutX="5.0" layoutY="-11.0" prefHeight="95.0" prefWidth="319.0" text="Blood Bank" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="52.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="324.0" layoutY="7.0" prefHeight="59.0" prefWidth="319.0" text="Recievers List" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="45.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Button alignment="CENTER" layoutX="215.0" layoutY="591.0" mnemonicParsing="false" onAction="#export" prefHeight="39.0" prefWidth="214.0" style="-fx-background-color: gold;" text="Export to Excel">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="34.0" layoutY="602.0" mnemonicParsing="false" onAction="#doBack" prefHeight="11.0" prefWidth="45.0" style="-fx-background-color: e87676;" text="Back" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
